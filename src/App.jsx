@@ -13,7 +13,7 @@ function App() {
     event.preventDefault()
     setLoading(true)
     setData(null)
-    const res = await fetch(`https://ai-project-backend.up.railway.app/predict/${inputRef.current.value}`, {mode: 'cors', method: "GET"})
+    const res = await fetch(`https://dwm-project-sever.up.railway.app/predict/${inputRef.current.value}`, {mode: 'cors', method: "GET"})
     setData(await res.json())
     setLoading(false)
     console.log(data);
